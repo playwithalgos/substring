@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        background-color: black;
+        color: white;
+    }
+
+    body {
+        overflow-x: scroll;
+        width: fit-content;
+    }
+
+    .char {
+        display: inline-block;
+        color: white;
+        background-color: red;
+        padding: 8px;
+        width: 20px;
+        height: 20px;
+        margin: 0px;
+        user-select: none;
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid black;
+        vertical-align: top;
+    }
+
+    .word {
+        position: relative;
+        display: block;
+        height: 42px;
+        white-space: nowrap;
+    }
+
+    .pattern {
+        top: 0px;
+        left: 0px;
+        width: fit-content;
+    }
+
+
+
+
+
+    .cursor {
+        border-top: 2px solid white;
+    }
+
+    #playground {
+        padding: 16px;
+        margin-top: 20px;
+    }
+
+
+
+    #options {
+        position: fixed;
+        bottom: 0px;
+        padding: 8px;
+    }
+
+
+
+    .hidden {
+        opacity: 0;
+    }
+
+
+    .seen {
+        color: white;
+    }
+
+</style>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="playground">
+        <div class="word" id="word"></div>
+        <div class="word pattern" id="pattern"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
